@@ -14,6 +14,6 @@ admin.site.register(UserData,userdetailsAdmin)
 
 #this is to show all the problems submitted by the users in database
 class userproblemdetailsAdmin(admin.ModelAdmin):
-    list_display=('user','UserProblem_title','UserProblem_photo','UserProblem_description','UserProblem_status')
+    list_display=('user','UserProblem_title','UserProblem_photo','UserProblem_location','UserProblem_description','UserProblem_status')
 
 admin.site.register(UserProblem,userproblemdetailsAdmin)

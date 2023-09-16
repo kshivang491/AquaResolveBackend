@@ -18,7 +18,8 @@ class UserData(models.Model):
 class UserProblem(models.Model):
         UserProblem_title=models.CharField(max_length=30)
         UserProblem_photo=models.ImageField(upload_to="user/problemimage", default="")
-        UserProblem_description=models.CharField(max_length=50)
+        UserProblem_location=models.CharField(max_length=50)
+        UserProblem_description=models.CharField(max_length=100)
         UserProblem_status= models.CharField(max_length=50, choices=(
               ('solved','solved'),
               ('pending','pending'),
